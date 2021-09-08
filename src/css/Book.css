@@ -1,0 +1,11 @@
+.book {
+    box-sizing: border-box;
+    padding: 10px;
+    margin-top: 20px;
+    flex-basis: calc(100% / 3 - 50px);
+}
+
+img {
+    width: 100px;
+    height: 100px;
+}
