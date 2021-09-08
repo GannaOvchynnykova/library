@@ -1,24 +1,13 @@
-import {useState} from 'react';
+
 import '../css/Counter.css';
 
-const Counter = () => {
-    const [count, setCount] = useState(0);
-
-    const inc = () => {
-        setCount(count + 1)
-        console.log(count)
-    }
-
-    const dec = () => {
-        setCount(count -1)
-        console.log(count)
-    }
-
+const Counter = ({id, quantity, onIncClickHandler, onDecClickHandler}) => {
+    
     return(
         <div className='counter'>
-            <h4>Count: {count}</h4>
-            <button onClick={inc}>+</button>
-            <button onClick={dec}>-</button>
+            <h4>Quantity: {quantity}</h4>
+            <button onClick={()=>onDecClickHandler(id)}>-</button>
+            <button onClick={()=>onIncClickHandler(id)}>+</button>
         </div>
     )
 }

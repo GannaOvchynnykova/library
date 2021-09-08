@@ -1,11 +1,18 @@
 .book {
+    border: 1px solid black;
     box-sizing: border-box;
     padding: 10px;
     margin-top: 20px;
-    flex-basis: calc(100% / 3 - 50px);
+    flex-basis: calc(100% / 3 - 10px);
 }
 
-img {
-    width: 100px;
-    height: 100px;
+.book img {
+    height: 150px;
+    display: block;
+    margin: 20px auto;
+}
+
+.w100{
+    width: 100%;
+    height: auto !important;
 }
